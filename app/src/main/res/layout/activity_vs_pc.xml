@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VsPC">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="403dp"
+        android:layout_height="491dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".VsHumanOrPc">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="121dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.325">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="121dp"
+                android:layout_height="118dp"
+                app:columnCount="3"
+                app:rowCount="3">
+
+                <Button
+                    android:id="@+id/b0"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b8"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.GridLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Reset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+            app:layout_constraintVertical_bias="0.228" />
+
+        <TextView
+            android:id="@+id/statusLabel"
+            android:layout_width="145dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="GOOD LUCK"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/xPlayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.243" />
+
+        <TextView
+            android:id="@+id/pcPlayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="124dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
